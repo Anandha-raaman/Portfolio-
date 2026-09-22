@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anandha Raaman S - Generative AI Engineer specializing in production LLM orchestration, LangGraph multi-agent workflows, and hybrid RAG architectures.">
+  <meta name="keywords" content="Anandha Raaman S, Generative AI Engineer, LangGraph, LangChain, RAG, ChromaDB, FastAPI, Python, AI Engineer Portfolio">
+  <meta name="author" content="Anandha Raaman S">
+  <title>Anandha Raaman S | Generative AI Engineer</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="logo" href="#home" aria-label="Anandha Raaman S Home">
+        <span class="logo-mark">AR</span>
+        <span class="logo-name">Anandha Raaman<span class="dot">.</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#architecture" class="nav-link">Core Focus</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action items: Theme Toggle & Mobile Menu -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn theme-btn" aria-label="Toggle color theme" title="Toggle dark/light mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-outline get-in-touch-btn">Get In Touch</a>
+
+        <button id="mobile-toggle" class="icon-btn mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-indicator">
+              <span class="status-pulse"></span>
+              <span class="status-dot"></span>
+            </span>
+            <span>Generative AI Engineer</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="accent-text">Anandha Raaman S</span>
+          </h1>
+
+          <p class="hero-headline">
+            Architecting <span class="text-highlight">Autonomous Multi-Agent Systems</span>, 
+            <span class="text-highlight">Hybrid RAG Pipelines</span>, and Production LLM Solutions.
+          </p>
+
+          <p class="hero-summary">
+            Engineering graduate specializing in Generative AI engineering and production LLM orchestration. 
+            Hands-on experience engineering state machines with <strong>LangGraph</strong>, high-precision hybrid retrieval with 
+            <strong>ChromaDB/FlashRank</strong>, and context-grounded analytical agents with deterministic evaluation frameworks and safety guardrails.
+          </p>
+
+          <!-- Action buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Featured Projects</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" class="btn-icon">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            <div class="hero-social-links">
+              <a href="https://github.com/anandharaaman" target="_blank" rel="noopener noreferrer" class="social-link-icon" title="GitHub - anandharaaman" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+              <a href="https://linkedin.com/in/anandharaaman-s" target="_blank" rel="noopener noreferrer" class="social-link-icon" title="LinkedIn - anandharaaman-s" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.66 1.66 0 1 0 0 3.32 1.66 1.66 0 0 0 0-3.32z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Highlight Metric Badges -->
+          <div class="metrics-ribbon">
+            <div class="metric-card">
+              <div class="metric-val">+38%</div>
+              <div class="metric-label">Context Precision Lift (FlashRank)</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val">LangGraph</div>
+              <div class="metric-label">Multi-Agent State Machines with HITL</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val">AST Guardrails</div>
+              <div class="metric-label">Safe Text-to-SQL Query Parsing</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val">0ms Latency</div>
+              <div class="metric-label">Client-Side Browser Optimization</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01 // PROFILE</span>
+          <h2 class="section-title">Professional Summary</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-card-wrapper">
+          <div class="about-main-card">
+            <div class="about-text-content">
+              <p class="summary-paragraph">
+                Engineering graduate specializing in <strong>Generative AI engineering and production LLM orchestration</strong>. 
+                Hands-on experience architecting autonomous multi-agent state machines, hybrid Retrieval-Augmented Generation (RAG) pipelines, 
+                and context-grounded analytical agents using <strong>LangGraph, LangChain, ChromaDB/FAISS</strong>, and leading foundation models.
+              </p>
+              <p class="summary-paragraph">
+                Adept at implementing deterministic evaluation frameworks, schema validation, safety guardrails, and secure API backends for reliable real-world applications.
+              </p>
+            </div>
+
+            <div class="key-facts-grid">
+              <div class="fact-item">
+                <span class="fact-label">Location</span>
+                <span class="fact-value">Chennai, Tamil Nadu, India</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Specialization</span>
+                <span class="fact-value">Gen AI Engineering & Agent Orchestration</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Core Tooling</span>
+                <span class="fact-value">LangGraph • LangChain • FastAPI • ChromaDB</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Degree</span>
+                <span class="fact-value">B.E. Mechatronics Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02 // CAPABILITIES</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Structured proficiencies based on production LLM architecture and engineering best practices.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Generative AI & Agents -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon-box cat-ai">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                  <path d="M12 2a10 10 0 0 1 10 10h-10V2z"></path>
+                  <path d="M12 12L2.5 7.5"></path>
+                  <path d="M12 12v9.5"></path>
+                  <path d="M12 12l9.5-4.5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Generative AI & Agents</h3>
+                <span class="skill-cat-desc">Autonomous multi-agent systems & orchestration</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-accent">LangGraph</span>
+              <span class="tag tag-accent">LangChain</span>
+              <span class="tag">Multi-Agent Orchestration</span>
+              <span class="tag">Supervisor-Worker Routing</span>
+              <span class="tag">Tool Calling</span>
+              <span class="tag">Human-in-the-Loop (HITL)</span>
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">Context Grounding</span>
+            </div>
+          </div>
+
+          <!-- 2. RAG & Vector Search -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon-box cat-rag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <path d="M11 8v6M8 11h6"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">RAG & Vector Search</h3>
+                <span class="skill-cat-desc">Retrieval, indexing, reranking & context compression</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-accent">Hybrid Retrieval (Dense + BM25)</span>
+              <span class="tag tag-accent">FlashRank (Cross-Encoder)</span>
+              <span class="tag">ChromaDB</span>
+              <span class="tag">FAISS</span>
+              <span class="tag">Semantic & Recursive Chunking</span>
+              <span class="tag">Metadata Filtering</span>
+              <span class="tag">Context Compression</span>
+            </div>
+          </div>
+
+          <!-- 3. LLMs & Evaluation -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon-box cat-eval">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">LLMs & Evaluation</h3>
+                <span class="skill-cat-desc">Foundation models, local inference & automated benchmarking</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-accent">Ollama (Offline Inference)</span>
+              <span class="tag">Qwen 2.5</span>
+              <span class="tag tag-accent">Google Gemini API</span>
+              <span class="tag">Hugging Face Transformers</span>
+              <span class="tag tag-accent">Ragas Evaluation (Faithfulness & Relevance)</span>
+            </div>
+          </div>
+
+          <!-- 4. Backend, Web & Data -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon-box cat-backend">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Backend, Web & Data</h3>
+                <span class="skill-cat-desc">High-throughput APIs, databases & schema validation</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-accent">Python</span>
+              <span class="tag tag-accent">FastAPI</span>
+              <span class="tag">Flask</span>
+              <span class="tag">SQL & PostgreSQL</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag">Pandas & NumPy</span>
+              <span class="tag">Pydantic</span>
+              <span class="tag">JSON Schema Validation</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- 5. DevOps & Engineering -->
+          <div class="skill-category-card full-width-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon-box cat-devops">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="18" cy="18" r="3"></circle>
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                  <line x1="6" y1="9" x2="6" y2="21"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">DevOps & Engineering</h3>
+                <span class="skill-cat-desc">Production hygiene, safety guardrails & deployment workflows</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Git & GitHub</span>
+              <span class="tag">CI/CD Pipelines</span>
+              <span class="tag">Docker basics</span>
+              <span class="tag">Environment Isolation (.env)</span>
+              <span class="tag tag-accent">Guardrails AI</span>
+              <span class="tag">Error Handling & Tracing</span>
+              <span class="tag">Render</span>
+              <span class="tag">Vercel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03 // PORTFOLIO</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world AI architectures, multi-agent frameworks, and production-tested systems.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters" role="tablist" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All Projects (4)</button>
+          <button class="filter-btn" data-filter="rag">RAG & Vector Search</button>
+          <button class="filter-btn" data-filter="agents">Multi-Agent Systems</button>
+          <button class="filter-btn" data-filter="analytics">AI Analytics & Web</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJECT 01: Enterprise Document Intelligence & Advanced RAG System -->
+          <article class="project-card" data-category="rag">
+            <div class="project-card-inner">
+              <div class="project-card-header">
+                <div class="project-badge-row">
+                  <span class="project-seq">PROJECT 01</span>
+                  <span class="metric-pill highlight-pill">+38% Context Precision</span>
+                </div>
+                <h3 class="project-heading">Enterprise Document Intelligence & Advanced RAG System</h3>
+                <p class="project-subtitle-text">Production multi-document Q&A engine with hybrid dense+sparse retrieval, FlashRank reranking, and citation guardrails.</p>
+              </div>
+
+              <!-- Tech Stack Badges -->
+              <div class="project-tech-badges">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">LangChain</span>
+                <span class="tech-badge">ChromaDB</span>
+                <span class="tech-badge">Hugging Face</span>
+                <span class="tech-badge">Flask</span>
+                <span class="tech-badge">FlashRank</span>
+              </div>
+
+              <!-- Architecture Highlights -->
+              <div class="project-body">
+                <ul class="project-bullets">
+                  <li>
+                    <strong>Semantic Chunking & Metadata:</strong> Architected an enterprise multi-document Q&A pipeline handling complex PDFs with semantic chunking (500 tokens, 10% overlap) and dynamic hierarchical metadata extraction.
+                  </li>
+                  <li>
+                    <strong>Hybrid Retrieval & Cross-Encoder Reranking:</strong> Implemented a hybrid retrieval strategy combining dense vector similarity (BGE/MiniLM embeddings via ChromaDB) and keyword search (BM25) followed by FlashRank cross-encoder reranking, <strong>lifting Context Precision by 38%</strong>.
+                  </li>
+                  <li>
+                    <strong>Citation Attribution & Evaluation:</strong> Enforced strict citation attribution and source grounding with hallucination guardrails; maintained multi-turn conversational memory and benchmarked retrieval faithfulness via <strong>Ragas automated evaluation</strong>.
+                  </li>
+                  <li>
+                    <strong>Production Serving:</strong> Deployed a resilient Flask REST API featuring asynchronous background ingestion queues and real-time streaming inference.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-card-footer">
+                <div class="project-links">
+                  <a href="https://github.com/anandharaaman" target="_blank" rel="noopener noreferrer" class="link-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="link-icon">
+                      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                    </svg>
+                    <span>View Architecture on GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: LangGraph Multi-Agent Research & Task Automation System -->
+          <article class="project-card" data-category="agents">
+            <div class="project-card-inner">
+              <div class="project-card-header">
+                <div class="project-badge-row">
+                  <span class="project-seq">PROJECT 02</span>
+                  <span class="metric-pill info-pill">Supervisor-Worker & HITL</span>
+                </div>
+                <h3 class="project-heading">LangGraph Multi-Agent Research & Task Automation System</h3>
+                <p class="project-subtitle-text">Autonomous state machine with supervisor routing, schema-constrained tool execution, and SQLite state rollbacks.</p>
+              </div>
+
+              <!-- Tech Stack Badges -->
+              <div class="project-tech-badges">
+                <span class="tech-badge">LangGraph</span>
+                <span class="tech-badge">LangChain</span>
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Tavily API</span>
+                <span class="tech-badge">SQLite</span>
+                <span class="tech-badge">Pydantic</span>
+              </div>
+
+              <!-- Architecture Highlights -->
+              <div class="project-body">
+                <ul class="project-bullets">
+                  <li>
+                    <strong>Supervisor-Worker Orchestration:</strong> Engineered an autonomous multi-agent workflow leveraging LangGraph state graphs with a centralized Supervisor node coordinating specialized Worker Agents (Web Research, Document Retrieval, and Synthesis).
+                  </li>
+                  <li>
+                    <strong>Deterministic Schema Execution:</strong> Configured dynamic conditional routing, cyclic execution, and schema-constrained tool calling using <strong>Pydantic</strong>, preventing downstream parser failures and enforcing deterministic agent execution.
+                  </li>
+                  <li>
+                    <strong>Human-in-the-Loop (HITL) & Checkpoints:</strong> Integrated a Human-in-the-Loop (HITL) interrupt mechanism at critical checkpoints and persistent state checkpointing (SQLite) for state rollbacks, human verification, and context resumption.
+                  </li>
+                  <li>
+                    <strong>Resilience & Memory:</strong> Implemented exponential-backoff retry policies, fallback node routing, and message window summarization memory.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-card-footer">
+                <div class="project-links">
+                  <a href="https://github.com/anandharaaman" target="_blank" rel="noopener noreferrer" class="link-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="link-icon">
+                      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                    </svg>
+                    <span>View Repository on GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: End-to-End AI SQL & Data Analytics Platform -->
+          <article class="project-card" data-category="analytics">
+            <div class="project-card-inner">
+              <div class="project-card-header">
+                <div class="project-badge-row">
+                  <span class="project-seq">PROJECT 03</span>
+                  <span class="metric-pill security-pill">AST & Regex Guardrails</span>
+                </div>
+                <h3 class="project-heading">End-to-End AI SQL & Data Analytics Platform</h3>
+                <p class="project-subtitle-text">Natural language to SQL system with AST security interceptors, automated statistical insights, and FastAPI backend.</p>
+              </div>
+
+              <!-- Tech Stack Badges -->
+              <div class="project-tech-badges">
+                <span class="tech-badge">FastAPI</span>
+                <span class="tech-badge">Streamlit</span>
+                <span class="tech-badge">SQL</span>
+                <span class="tech-badge">Google Gemini API</span>
+                <span class="tech-badge">Pandas</span>
+                <span class="tech-badge">Render</span>
+              </div>
+
+              <!-- Architecture Highlights -->
+              <div class="project-body">
+                <ul class="project-bullets">
+                  <li>
+                    <strong>Text-to-SQL Engine:</strong> Built a Text-to-SQL analytics system translating natural language business questions into optimized SQL queries against relational databases with high translation accuracy.
+                  </li>
+                  <li>
+                    <strong>Multi-Tier Safety Guardrails:</strong> Designed a multi-tier safety guardrail pipeline combining <strong>AST parsing and regex checks</strong> to intercept and block destructive operations (DROP, DELETE, UPDATE) prior to read-only execution.
+                  </li>
+                  <li>
+                    <strong>Automated Insights & UI:</strong> Developed automated statistical insight generation with Pandas, coupled with an interactive Streamlit UI and a high-throughput FastAPI backend with structured error recovery.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-card-footer">
+                <div class="project-links">
+                  <a href="https://github.com/anandharaaman" target="_blank" rel="noopener noreferrer" class="link-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="link-icon">
+                      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                    </svg>
+                    <span>View Repository on GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: Shrinker – Photo & PDF Compressor Web App -->
+          <article class="project-card" data-category="analytics">
+            <div class="project-card-inner">
+              <div class="project-card-header">
+                <div class="project-badge-row">
+                  <span class="project-seq">PROJECT 04</span>
+                  <span class="metric-pill live-pill">
+                    <span class="pulse-dot"></span> Live App on Vercel
+                  </span>
+                </div>
+                <h3 class="project-heading">Shrinker – Photo & PDF Compressor Web App</h3>
+                <p class="project-subtitle-text">High-efficiency, client-side media compression tool processing multi-page PDFs and images directly inside the browser.</p>
+              </div>
+
+              <!-- Tech Stack Badges -->
+              <div class="project-tech-badges">
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Client-Side Image/PDF Optimization</span>
+                <span class="tech-badge">Vercel</span>
+              </div>
+
+              <!-- Architecture Highlights -->
+              <div class="project-body">
+                <ul class="project-bullets">
+                  <li>
+                    <strong>Client-Side Engine:</strong> Developed a lightweight, client-side media compression tool that compresses images and multi-page PDF documents entirely in the browser without quality degradation.
+                  </li>
+                  <li>
+                    <strong>Zero Latency & Privacy:</strong> Reduced file sizes significantly while eliminating server latency and maintaining full client data privacy; deployed globally with zero downtime on Vercel.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-card-footer">
+                <div class="project-links">
+                  <a href="https://github.com/anandharaaman" target="_blank" rel="noopener noreferrer" class="link-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="link-icon">
+                      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                    </svg>
+                    <span>Source Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE & METHODOLOGY / CORE FOCUS SECTION -->
+    <section id="architecture" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04 // ARCHITECTURAL FOCUS</span>
+          <h2 class="section-title">Core Engineering Standards</h2>
+          <p class="section-subtitle">How I design, test, and ship reliable Gen AI systems that succeed beyond the prototype phase.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="focus-grid">
+          <div class="focus-card">
+            <div class="focus-icon-box">01</div>
+            <h3>Hybrid RAG & Precision</h3>
+            <p>Combining dense neural vector embeddings (BGE / MiniLM) with BM25 sparse keyword search, passed through FlashRank cross-encoders to eliminate hallucinations and achieve 38%+ context precision.</p>
+          </div>
+
+          <div class="focus-card">
+            <div class="focus-icon-box">02</div>
+            <h3>Deterministic Agent Control</h3>
+            <p>Using LangGraph state graphs with supervisor nodes, cyclic execution safeguards, and Pydantic schema validation to stop downstream parser failures and infinite loops before they happen.</p>
+          </div>
+
+          <div class="focus-card">
+            <div class="focus-icon-box">03</div>
+            <h3>Human-in-the-Loop (HITL)</h3>
+            <p>Embedding interrupt checkpoints at critical action barriers, backed by persistent SQLite state checkpointing for state inspection, rollback, and resuming agent context safely.</p>
+          </div>
+
+          <div class="focus-card">
+            <div class="focus-icon-box">04</div>
+            <h3>Rigorous Evaluation & Safety</h3>
+            <p>Benchmarking retrieval faithfulness and answer relevance using Ragas automated evaluation, coupled with AST parsing and regex filters to intercept destructive actions in production backends.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">05 // ACADEMICS</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Academic foundations combining engineering discipline with specialized artificial intelligence development.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="education-timeline">
+          <!-- Item 1: Bachelor of Engineering -->
+          <div class="education-item featured-edu">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <div class="edu-header">
+                <div>
+                  <span class="edu-degree">Bachelor of Engineering (B.E.) in Mechatronics Engineering</span>
+                  <h3 class="edu-institution">Rajalakshmi Engineering College</h3>
+                  <span class="edu-location">Chennai, India</span>
+                </div>
+                <div class="edu-badge">
+                  <span class="badge-label">Aggregate</span>
+                  <span class="badge-score">71%</span>
+                </div>
+              </div>
+              <p class="edu-desc">Mechatronics Engineering background with a strong foundation in core engineering principles and high proficiency in coding, software development, and problem-solving.</p>
+            </div>
+          </div>
+
+          <!-- Item 2: Class XII -->
+          <div class="education-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <div class="edu-header">
+                <div>
+                  <span class="edu-degree">Higher Secondary Certificate (HSC – Class XII)</span>
+                  <h3 class="edu-institution">Aditya Vidhyashram Higher Secondary School</h3>
+                </div>
+                <div class="edu-badge secondary-badge">
+                  <span class="badge-label">Score</span>
+                  <span class="badge-score">77%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Class X -->
+          <div class="education-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <div class="edu-header">
+                <div>
+                  <span class="edu-degree">Secondary School Leaving Certificate (SSLC – Class X)</span>
+                  <h3 class="edu-institution">Sacred Heart Convent Anglo-Indian Higher Secondary School</h3>
+                </div>
+                <div class="edu-badge secondary-badge">
+                  <span class="badge-label">Score</span>
+                  <span class="badge-score">74%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">06 // CONNECT</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">Actively open to opportunities in Generative AI Engineering, LLM Orchestration, RAG Development, and AI/ML.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-card">
+            <h3 class="contact-prompt">Let's discuss how I can bring value to your AI team.</h3>
+            <p class="contact-text">
+              Whether you are architecting a new agentic workflow, optimizing an existing RAG pipeline for precision, or seeking an engineer passionate about production LLMs, feel free to reach out.
+            </p>
+
+            <div class="contact-grid">
+              <!-- Email Card -->
+              <div class="contact-tile">
+                <div class="tile-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="tile-content">
+                  <span class="tile-label">Direct Email</span>
+                  <a href="mailto:anandharaaman05@gmail.com" class="tile-val">anandharaaman05@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-copy="anandharaaman05@gmail.com" title="Copy Email" aria-label="Copy Email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span class="copy-tooltip">Copy</span>
+                </button>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-tile">
+                <div class="tile-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="tile-content">
+                  <span class="tile-label">Phone / WhatsApp</span>
+                  <a href="tel:+918072210330" class="tile-val">+91 8072210330</a>
+                </div>
+                <button class="copy-btn" data-copy="+918072210330" title="Copy Phone Number" aria-label="Copy Phone Number">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span class="copy-tooltip">Copy</span>
+                </button>
+              </div>
+
+              <!-- LinkedIn Card -->
+              <div class="contact-tile">
+                <div class="tile-icon-box">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.66 1.66 0 1 0 0 3.32 1.66 1.66 0 0 0 0-3.32z"/>
+                  </svg>
+                </div>
+                <div class="tile-content">
+                  <span class="tile-label">LinkedIn</span>
+                  <a href="https://linkedin.com/in/anandharaaman-s" target="_blank" rel="noopener noreferrer" class="tile-val">linkedin.com/in/anandharaaman-s</a>
+                </div>
+                <a href="https://linkedin.com/in/anandharaaman-s" target="_blank" rel="noopener noreferrer" class="tile-action-link" aria-label="Visit LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+
+              <!-- GitHub Card -->
+              <div class="contact-tile">
+                <div class="tile-icon-box">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                </div>
+                <div class="tile-content">
+                  <span class="tile-label">GitHub</span>
+                  <a href="https://github.com/anandharaaman" target="_blank" rel="noopener noreferrer" class="tile-val">github.com/anandharaaman</a>
+                </div>
+                <a href="https://github.com/anandharaaman" target="_blank" rel="noopener noreferrer" class="tile-action-link" aria-label="Visit GitHub Profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Quick Action Buttons -->
+            <div class="contact-cta-bar">
+              <a href="mailto:anandharaaman05@gmail.com" class="btn btn-primary">
+                <span>Send Email</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="btn-icon">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+              </a>
+              <a href="tel:+918072210330" class="btn btn-secondary">
+                <span>Call Directly</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast notification for copy action -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a class="footer-logo" href="#home">AR<span>.</span></a>
+        <p class="footer-copy">© 2026 Anandha Raaman S • Generative AI Engineer</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/anandharaaman" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/anandharaaman-s" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
