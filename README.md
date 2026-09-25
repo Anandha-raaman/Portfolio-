@@ -34,7 +34,7 @@ A modern, high-performance portfolio website showcasing production LLM orchestra
    git add .
    git commit -m "feat: complete professional portfolio upgrade"
    ```
-2. Push to your repository: `https://github.com/anandharaaman/portfolio`
+2. Push to your repository: `https://github.com/Anandha-raaman/Portfolio-`
 3. Go to **Settings** → **Pages** in GitHub.
 4. Under **Branch**, select `main` and `/ (root)`, then click **Save**.
-5. Your portfolio will be live at `https://anandharaaman.github.io/portfolio`.
+5. Your portfolio will be live at `https://Anandha-raaman.github.io/Portfolio-`.
