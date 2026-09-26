@@ -14,8 +14,9 @@ A modern, high-performance portfolio website showcasing production LLM orchestra
 
 1. **Enterprise Document Intelligence & Advanced RAG System**: Multi-document Q&A engine with semantic chunking, dense + BM25 hybrid search, and FlashRank reranking (+38% Context Precision lift).
 2. **LangGraph Multi-Agent Research & Task Automation System**: Autonomous supervisor-worker state machine with Pydantic tool schemas, Human-in-the-Loop interrupts, and SQLite state rollbacks.
-3. **End-to-End AI SQL & Data Analytics Platform**: Text-to-SQL analytics system with AST parsing & regex safety guardrails, automated statistical insights, and FastAPI backend.
-4. **Shrinker – Photo & PDF Compressor Web App**: Client-side media compression tool running entirely in the browser with zero server latency and total data privacy.
+3. **Chatbot Techvruk — Autonomous Multi-Currency Task Planner Agent**: General-purpose AI planning engine built for the **Techvruk Hackathon AI Agentic System Challenge**, featuring a 5-stage ReAct loop, 35+ currency budgeting, 12% contingency reserve, and Google Gemini 3.5 Flash Lite live streaming.
+4. **End-to-End AI SQL & Data Analytics Platform**: Text-to-SQL analytics system with AST parsing & regex safety guardrails, automated statistical insights, and FastAPI backend.
+5. **Shrinker – Photo & PDF Compressor Web App**: Client-side media compression tool running entirely in the browser with zero server latency and total data privacy.
 
 ## 💻 Local Preview
 
