@@ -299,6 +299,7 @@
               <span class="tag">JSON Schema Validation</span>
               <span class="tag">REST APIs</span>
               <span class="tag">JavaScript</span>
+              <span class="tag tag-accent">React 19</span>
             </div>
           </div>
 
@@ -345,7 +346,7 @@
 
         <!-- Project Filter Buttons -->
         <div class="project-filters" role="tablist" aria-label="Filter projects">
-          <button class="filter-btn active" data-filter="all">All Projects (7)</button>
+          <button class="filter-btn active" data-filter="all">All Projects (8)</button>
           <button class="filter-btn" data-filter="rag">RAG & Vector Search</button>
           <button class="filter-btn" data-filter="agents">Multi-Agent Systems</button>
           <button class="filter-btn" data-filter="analytics">AI Analytics & Web</button>
@@ -704,6 +705,63 @@
               <div class="project-card-footer">
                 <div class="project-links">
                   <a href="https://github.com/Anandha-raaman/logmind-ai" target="_blank" rel="noopener noreferrer" class="link-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="link-icon">
+                      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                    </svg>
+                    <span>View Project on GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 08: Movie Alert – Real-Time Chennai Cinema Booking & Preferred Seat Availability Radar -->
+          <article class="project-card" data-category="analytics">
+            <div class="project-card-inner">
+              <div class="project-card-header">
+                <div class="project-badge-row">
+                  <span class="project-seq">PROJECT 08</span>
+                  <span class="metric-pill live-pill">
+                    <span class="pulse-dot"></span> SHA-256 Deduplication &amp; Real-Time Radar
+                  </span>
+                </div>
+                <h3 class="project-heading">Movie Alert &mdash; Real-Time Cinema Booking &amp; Seat Availability Radar</h3>
+                <p class="project-subtitle-text">Event-driven cinema tracking engine monitoring multiplex ticket releases, preferred middle-row acoustic sweet spots, and multi-channel instant alerts.</p>
+              </div>
+
+              <!-- Tech Stack Badges -->
+              <div class="project-tech-badges">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">FastAPI</span>
+                <span class="tech-badge">React 19</span>
+                <span class="tech-badge">SQLite</span>
+                <span class="tech-badge">Pydantic v2</span>
+                <span class="tech-badge">Telegram Bot API</span>
+                <span class="tech-badge">Windows Tray API</span>
+                <span class="tech-badge">Vite</span>
+              </div>
+
+              <!-- Architecture Highlights -->
+              <div class="project-body">
+                <ul class="project-bullets">
+                  <li>
+                    <strong>Real-Time Ticket &amp; Geometry Tracking:</strong> Engineered an event-driven tracking pipeline monitoring movie ticket openings, preferred middle-row acoustic geometry (Rows E–G, sweet-spot seats F10/F11), and showtime releases across major Chennai multiplexes (Sathyam, Escape, PVR, INOX).
+                  </li>
+                  <li>
+                    <strong>SHA-256 Deduplication &amp; Transaction Safety:</strong> Implemented deterministic SHA-256 event fingerprinting (<code>tracker_id + date + event_type + details</code>) enforced by <code>UNIQUE</code> SQLite constraints, mathematically preventing duplicate notifications across continuous polling cycles.
+                  </li>
+                  <li>
+                    <strong>Multi-Channel Alert Dispatching:</strong> Architected an instant alert pipeline forwarding critical booking openings to Windows desktop system tray notifications (<code>desktop_app.pyw</code>), asynchronous Telegram bots with direct booking deep-links, and in-app sound chimes.
+                  </li>
+                  <li>
+                    <strong>Interactive Seating Picker &amp; Command Center:</strong> Built an interactive BookMyShow-style curved neon seating layout picker with tiered pricing, paired with an <strong>Avengers: Doomsday Command Center</strong> and a modular provider architecture (<code>Simulation</code>, <code>Manual</code>, and extensible <code>Live B2B Gateway</code>).
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-card-footer">
+                <div class="project-links">
+                  <a href="https://github.com/Anandha-raaman/Movie-Alert" target="_blank" rel="noopener noreferrer" class="link-btn">
                     <svg viewBox="0 0 24 24" fill="currentColor" class="link-icon">
                       <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
                     </svg>
